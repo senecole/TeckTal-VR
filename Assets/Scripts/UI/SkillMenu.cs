@@ -24,7 +24,7 @@ namespace Tecktal
             buttons = GetComponentsInChildren<Button>();
             UpdateList();
             Debug.Log("Start coroutine");
-            StartCoroutine(ShowVideos());
+           // StartCoroutine(ShowVideos());
         }
 
         IEnumerator ShowVideos()

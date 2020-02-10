@@ -35,10 +35,12 @@ namespace Tecktal
             {
                 buttons[i].gameObject.SetActive(false);
             }
+            /*
             if(title != null)
             {
                 title.SetActive(btn > 0);
             }
+            */
         }
 
         public void Filter(string query)

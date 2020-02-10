@@ -8,9 +8,9 @@ namespace Tecktal
     public class VideoScreen : MonoBehaviour
     {
         
+        public VideoList allVideos;
         public VideoList featured;
-        public VideoList top;
-        public VideoList recommended;
+        public VideoList popular;
         [SerializeField]
         VideoList[] videoLists;
         TecktalSkillsAPI skillAPI;
@@ -28,7 +28,7 @@ namespace Tecktal
         {
             instance = this;
             skillAPI = GetComponent<TecktalSkillsAPI>();
-            videoLists = new VideoList[] { featured, top, recommended };
+            videoLists = new VideoList[] { allVideos, featured, popular };
             EmptyVideoLists();
             //gameObject.SetActive(false);
         }
@@ -62,16 +62,15 @@ namespace Tecktal
             {
                 Debug.Log("load module " + i);
                 Module m = moduleList.skillmodule[i];
-                featured.Add(m);
-                if(m.Type == "Top")
+                allVideos.Add(m);
+                if(m.Type == "Featured")
                 {
-                    top.Add(m);
-                }else if(m.Type == "Recommended")
+                    featured.Add(m);
+                }else if(m.Type == "Popular")
                 {
-                    recommended.Add(m);
+                    popular.Add(m);
                 }
             }
-
         }
 
         void EmptyVideoLists()
