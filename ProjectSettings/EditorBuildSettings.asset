@@ -5,22 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scripts/VidePlayer/Test/video test01.unity
-    guid: 95332a792a0785f49803d18b43d2ef7c
   - enabled: 1
-    path: Assets/Weelco/Demo/Scenes/GoogleVR Demo.unity
-    guid: fc02a5586c3bcfe45a674c5dbd7baa7d
+    path: Assets/Scenes/Login.unity
+    guid: 4bcc603b091ceb743bfb644cbfd8e994
   - enabled: 1
     path: Assets/Scenes/MenuScreen4.unity
     guid: 165fb4ac50223c54e9db9aa2e7ee0d27
-  - enabled: 0
-    path: Assets/Scenes/Video.unity
-    guid: 7d5298ab013028b468b1ac82cc033789
-  - enabled: 0
-    path: Assets/GoogleVR/Demos/Scenes/HelloVR.unity
-    guid: bb36d2905dc634f1c9eecb35beecaca8
-  - enabled: 0
-    path: Assets/GoogleVR/Demos/Scenes/VideoDemo.unity
-    guid: c79d901ffb34f428eadaa3a7269a6c7c
   m_configObjects: {}

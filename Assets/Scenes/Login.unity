@@ -17764,7 +17764,7 @@ MonoBehaviour:
   login: {fileID: 1846467033}
   menuScreen: {fileID: 297472578}
   errorLabel: {fileID: 685816171}
-  loginTest: 1
+  loginTest: 0
 --- !u!4 &1876283811
 Transform:
   m_ObjectHideFlags: 0

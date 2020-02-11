@@ -23,10 +23,18 @@ namespace Tecktal
         public GameObject login;
         public GameObject menuScreen;
         public Text errorLabel;
+        public bool loginTest = false;
 
         private void Start()
         {
             userAPI = GetComponent<TecktalUsersAPI>();
+            if (loginTest && Application.isEditor)
+            {
+                userEmail = "renanclaudino@gmail.com";
+                pass = "12345";
+                userAPI.GetUser(userEmail, OnSuccess, OnError);
+                enabled = false;
+            }
         }
 
         private void Update()

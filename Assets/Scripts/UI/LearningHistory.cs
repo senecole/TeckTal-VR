@@ -52,34 +52,48 @@ namespace Tecktal
 
         public void Load()
         {
+            Debug.Log("> LearningHistory Load");
             user = LoginManager.GetLoggedUser();
             if (user != null)
-            { 
+            {
+                Debug.Log("> USER " + user.name);
                 skillAPI.GetEnrolled(user.ID, OnSuccess, OnError);
             }                   
         }
 
         void OnSuccess(string text)
         {
-            Debug.Log("on success history menu: " + text);
+            text = FixJson(text);
+            Debug.Log("> On success history menu: " + text);
             moduleList = JsonUtility.FromJson<ModuleList>(text);
             UpdateList();
         }
 
+        string FixJson(string json)
+        {
+            json = json.Replace("\"skillmoduleuser\":", "\"skillmodule\":");
+            json = json.Replace("\"skillmodule.", "\"");
+            return json;
+        }
+
         void OnError(string text)
         {
-
+            Debug.Log("> on error history menu: " + text);
         }
 
         void UpdateList()
         {
+            Debug.Log("> History Menu Update List");
             int btn = 0;
-            for (int i = 0; i < moduleList.skillmodule.Length; i++)
+            if (moduleList != null && moduleList.skillmodule != null)
             {
-                if (btn >= buttons.Length)
-                    break;
-                SetButton(buttons[btn], moduleList.skillmodule[i]);
-                btn++;
+                for (int i = 0; i < moduleList.skillmodule.Length; i++)
+                {
+                    if (btn >= buttons.Length)
+                        break;
+                    SetButton(buttons[btn], moduleList.skillmodule[i]);
+                    btn++;
+                }
             }
             for (int i = btn; i < buttons.Length; i++)
             {

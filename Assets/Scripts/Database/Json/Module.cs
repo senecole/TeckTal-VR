@@ -21,6 +21,7 @@ namespace Tecktal
         public string name;
         public string ID;
         public string quizzes;
+        public string Added_Time;
         [SerializeField]
         Quiz _quiz;
         public Quiz quiz
@@ -40,10 +41,11 @@ namespace Tecktal
 
         public void Set(Button button)
         {
-            TMPro.TextMeshProUGUI[] labels = button.GetComponentsInChildren<TMPro.TextMeshProUGUI>();
+            Text[] labels = button.GetComponentsInChildren<Text>();
             labels[0].text = name;
             Image[] imgs = button.GetComponentsInChildren<Image>();
             imgs[1].enabled = true;
+            labels[1].text = Added_Time;
         }
     }
 }
