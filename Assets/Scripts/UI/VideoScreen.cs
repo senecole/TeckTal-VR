@@ -18,6 +18,7 @@ namespace Tecktal
         Skill lastSkill;
         [SerializeField]
         ModuleList moduleList;
+        public ProceedPopup proceedPopup;
 
         public static VideoScreen GetInstance()
         {

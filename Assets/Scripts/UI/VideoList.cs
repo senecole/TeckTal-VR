@@ -59,6 +59,8 @@ namespace Tecktal
             v.imgURL = m.url_thumbnail;
             v.isActive = true;
             v.videoURL = m.video;
+            v.ID = m.ID;
+            v.cost = m.Cost;
             videoInfos.Add(v);
         }
     }
@@ -70,6 +72,8 @@ namespace Tecktal
         public string imgURL;
         public string videoURL;
         public bool isActive;
+        public string ID;
+        public string cost;
 
         public void Set(Button button)
         {
@@ -99,11 +103,18 @@ namespace Tecktal
         public void OnClick()
         {
             Debug.Log("On Video Button Click");
-            VideoPlayer360 vp = VideoPlayer360.GetInstance();
-            if(vp != null)
+            if (LearningHistory.GetInstance().Contains(ID))
             {
-                Debug.Log("Found Video Player 360");
-                vp.Play(videoURL);
+                VideoPlayer360 vp = VideoPlayer360.GetInstance();
+                if (vp != null)
+                {
+                    Debug.Log("Found Video Player 360");
+                    vp.Play(videoURL);
+                }
+            }
+            else
+            {
+                VideoScreen.GetInstance().proceedPopup.Set(this);
             }
         }
     }

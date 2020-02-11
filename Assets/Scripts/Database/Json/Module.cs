@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Tecktal
 {
@@ -35,6 +36,14 @@ namespace Tecktal
             string str = "{\"quizzes\":[" + quizzes + "]}";
             Debug.Log("Load: " + str);
             _quiz = JsonUtility.FromJson<Quiz>(str);
+        }
+
+        public void Set(Button button)
+        {
+            TMPro.TextMeshProUGUI[] labels = button.GetComponentsInChildren<TMPro.TextMeshProUGUI>();
+            labels[0].text = name;
+            Image[] imgs = button.GetComponentsInChildren<Image>();
+            imgs[1].enabled = true;
         }
     }
 }
