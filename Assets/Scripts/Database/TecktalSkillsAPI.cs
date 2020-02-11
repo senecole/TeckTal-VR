@@ -110,7 +110,7 @@ namespace Tecktal
             WWWForm form = new WWWForm();
             form.AddField("authtoken", authtoken);
             form.AddField("scope", "creatorapi");
-         //   form.AddField("criteria", "(user_id == " + userID + ")");
+            form.AddField("criteria", "(user_id == " + userID + ")");
             form.AddField("zc_ownername", owner);
             form.AddField("raw", "true");
 

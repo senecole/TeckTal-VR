@@ -14,6 +14,7 @@ namespace Tecktal
         VideoInfo videoInfo;
         [SerializeField]
         CreditList creditList;
+        User user;
 
         private void Awake()
         {
@@ -29,28 +30,80 @@ namespace Tecktal
 
         public void TryPurchase()
         {
-
-        }
-
-       void GetCredits()
-       {
-            User user = LoginManager.GetLoggedUser();
-            if(user == null)
+            Debug.Log("Try Purchase");
+            user = LoginManager.GetLoggedUser();
+            if (user == null)
             {
+                Debug.Log("No User");
+                Cancel();
                 return;
             }
+            Debug.Log("Try Get Credits");
             skillAPI.GetCredits(user.ID, OnCreditSuccess, OnCreditError);
-       }
+        }
+
+        public void Cancel()
+        {
+            Debug.Log("Cancel");
+            gameObject.SetActive(false);
+        }
 
         void OnCreditSuccess(string text)
         {
             Debug.Log("on success credit list: " + text);
-            creditList = JsonUtility.FromJson<CreditList>(text);
+            try
+            {
+                creditList = JsonUtility.FromJson<CreditList>(text);
+                string str = creditList.tecktalon[0].credit;
+                Debug.Log("credit = " + str);
+                int credit = int.Parse(str);
+                Debug.Log("credit number = " + credit);
+                str = videoInfo.cost;
+                Debug.Log("cost = " + str);
+                str = str.Replace("$", "");
+                str = str.TrimEnd();
+                Debug.Log("cost2 = " + str);
+                float cost = float.Parse(str);
+                Debug.Log("cost number = " + cost);
+                if(cost < credit)
+                {
+                    //skillAPI.Enroll(videoInfo.ID, user.ID, OnEnrollSuccess, OnEnrollError);
+                }
+                else
+                {
+                    NoCredits();
+                }
+            }
+            catch
+            {
+                UnexpectedError();
+            }
+        }
+
+        public void OnEnrollSuccess(string msg)
+        {
+            //TODO
+        }
+
+        public void OnEnrollError(string msg)
+        {
+            //TODO
+        }
+
+        void NoCredits()
+        {
+            //TODO
         }
 
         void OnCreditError(string text)
         {
+            UnexpectedError();
+        }
 
+        void UnexpectedError()
+        {
+            Debug.Log("Unexpected Error");
+            //TODO
         }
     }
 }

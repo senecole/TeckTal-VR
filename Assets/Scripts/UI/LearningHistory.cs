@@ -25,7 +25,7 @@ namespace Tecktal
 
         public bool Contains(string moduleID)
         {
-            if (moduleList == null)
+            if (moduleList == null || moduleList.skillmodule == null)
                 return false;
             for(int i = 0; i < moduleList.skillmodule.Length; i++)
             {
