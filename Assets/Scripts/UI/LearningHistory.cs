@@ -42,11 +42,11 @@ namespace Tecktal
             instance = this;
             buttons = GetComponentsInChildren<Button>();
             skillAPI = GetComponent<TecktalSkillsAPI>();
-            UpdateList();
         }
 
         private void Start()
         {
+            UpdateList();
             Load();
         }
 

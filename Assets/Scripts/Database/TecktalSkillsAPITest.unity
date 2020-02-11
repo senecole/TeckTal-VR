@@ -324,10 +324,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16663aca9481e2542825f114ff5285ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testType: 1
+  testType: 4
   skillPathID: 3772331000001582013
-  userID: 3772331000001588005
-  skillModuleID: 3772331000001494015
+  userID: 3772331000001589005
+  skillModuleID: 3772331000001622031
 --- !u!114 &705408833
 MonoBehaviour:
   m_ObjectHideFlags: 0
