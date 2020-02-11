@@ -33,14 +33,14 @@ namespace Tecktal
         }
 
        void GetCredits()
-        {
+       {
             User user = LoginManager.GetLoggedUser();
             if(user == null)
             {
                 return;
             }
             skillAPI.GetCredits(user.ID, OnCreditSuccess, OnCreditError);
-        }
+       }
 
         void OnCreditSuccess(string text)
         {

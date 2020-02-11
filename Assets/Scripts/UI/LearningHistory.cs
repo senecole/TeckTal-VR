@@ -40,18 +40,23 @@ namespace Tecktal
         private void Awake()
         {
             instance = this;
+            buttons = GetComponentsInChildren<Button>();
+            skillAPI = GetComponent<TecktalSkillsAPI>();
+            UpdateList();
         }
 
         private void Start()
         {
+            Load();
+        }
+
+        public void Load()
+        {
             user = LoginManager.GetLoggedUser();
             if (user != null)
-            {
-                skillAPI = GetComponent<TecktalSkillsAPI>();
+            { 
                 skillAPI.GetEnrolled(user.ID, OnSuccess, OnError);
-            }
-            buttons = GetComponentsInChildren<Button>();
-            UpdateList();
+            }                   
         }
 
         void OnSuccess(string text)
@@ -88,8 +93,8 @@ namespace Tecktal
             Image[] img = btn.GetComponentsInChildren<Image>();
             StartCoroutine(Tools.SetImage(module.url_thumbnail, img[1]));
             btn.gameObject.SetActive(true);
-            SkillButton sb = btn.gameObject.AddComponent<SkillButton>();
-           // sb.Add(skill);
+            HistoryButton hb = btn.gameObject.AddComponent<HistoryButton>();
+            hb.Add(module);
         }
     }
 }
