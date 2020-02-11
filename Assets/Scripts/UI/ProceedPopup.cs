@@ -15,6 +15,7 @@ namespace Tecktal
         [SerializeField]
         CreditList creditList;
         User user;
+        public MessagePopup msgPopup;
 
         private void Awake()
         {
@@ -67,7 +68,7 @@ namespace Tecktal
                 Debug.Log("cost number = " + cost);
                 if(cost < credit)
                 {
-                    //skillAPI.Enroll(videoInfo.ID, user.ID, OnEnrollSuccess, OnEnrollError);
+                    skillAPI.Enroll(videoInfo.ID, user.ID, OnEnrollSuccess, OnEnrollError);
                 }
                 else
                 {
@@ -82,17 +83,36 @@ namespace Tecktal
 
         public void OnEnrollSuccess(string msg)
         {
-            //TODO
+            if (!msg.Contains("\"status\":\"Success\""))
+            {
+                UnexpectedError();
+                return;
+            }
+            else
+            {
+                Show("Congratulations! " + videoInfo.title + " purchased.");
+                LearningHistory lh = LearningHistory.GetInstance();
+                if (lh != null)
+                {
+                    lh.Load();
+                }
+            }
         }
 
         public void OnEnrollError(string msg)
         {
-            //TODO
+            UnexpectedError();
         }
 
         void NoCredits()
         {
-            //TODO
+            Show("You don't have enough Tecktalons to purchase this course.");
+        }
+
+        void Show(string msg)
+        {
+            msgPopup.Show(msg);
+            gameObject.SetActive(false);
         }
 
         void OnCreditError(string text)
@@ -103,7 +123,7 @@ namespace Tecktal
         void UnexpectedError()
         {
             Debug.Log("Unexpected Error");
-            //TODO
+            Show("An unexpected error occurred please try again later.");
         }
     }
 }
