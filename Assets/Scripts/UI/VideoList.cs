@@ -103,7 +103,7 @@ namespace Tecktal
         public void OnClick()
         {
             Debug.Log("On Video Button Click");
-            if (LearningHistory.GetInstance().Contains(ID))
+            if (LearningHistory.GetInstance().Contains(title))
             {
                 VideoPlayer360 vp = VideoPlayer360.GetInstance();
                 if (vp != null)

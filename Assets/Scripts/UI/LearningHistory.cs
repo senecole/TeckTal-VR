@@ -23,13 +23,14 @@ namespace Tecktal
             return instance;
         }
 
-        public bool Contains(string moduleID)
+        public bool Contains(string moduleName)
         {
+            Debug.Log("Check if contains Name " + moduleName);
             if (moduleList == null || moduleList.skillmodule == null)
                 return false;
             for(int i = 0; i < moduleList.skillmodule.Length; i++)
             {
-                if (moduleList.skillmodule[i].ID == moduleID)
+                if (moduleList.skillmodule[i].name == moduleName)
                 {
                     return true;
                 }
