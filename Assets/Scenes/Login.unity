@@ -8481,24 +8481,72 @@ MonoBehaviour:
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   - title: Other awesome video
     imgURL: 
     videoURL: 
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   - title: Very nice video
     imgURL: 
     videoURL: 
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   buttons: []
   title: {fileID: 0}
 --- !u!114 &934059767
@@ -10796,24 +10844,72 @@ MonoBehaviour:
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   - title: Other amazing film
     imgURL: 
     videoURL: 
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   - title: Very cool video
     imgURL: 
     videoURL: 
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   buttons: []
   title: {fileID: 0}
 --- !u!114 &1133963993
@@ -15720,24 +15816,72 @@ MonoBehaviour:
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   - title: Other fantastic movie
     imgURL: 
     videoURL: 
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   - title: Very fun video 2
     imgURL: 
     videoURL: 
     isActive: 1
     ID: 
     cost: 
-    quiz:
-      quizzes: []
+    module:
+      thumbnail: 
+      description: 
+      Attachment: 
+      Duration: 
+      video: 
+      Cost: 
+      skillpath_id: 
+      Type: 
+      Language: 
+      url_thumbnail: 
+      name: 
+      ID: 
+      quizzes: 
+      Added_Time: 
+      skillmodule: 
+      _quiz:
+        quizzes: []
   buttons: []
   title: {fileID: 0}
 --- !u!114 &1665736262

@@ -61,7 +61,7 @@ namespace Tecktal
             v.videoURL = m.video;
             v.ID = m.ID;
             v.cost = m.Cost;
-            v.quiz = m.quiz;
+            v.module = m;
             videoInfos.Add(v);
         }
     }
@@ -75,7 +75,7 @@ namespace Tecktal
         public bool isActive;
         public string ID;
         public string cost;
-        public Quiz quiz;
+        public Module module;
 
         public void Set(Button button)
         {
@@ -111,7 +111,7 @@ namespace Tecktal
                 if (vp != null)
                 {
                     Debug.Log("Found Video Player 360");
-                    vp.Play(videoURL, quiz);
+                    vp.Play(videoURL, module);
                 }
             }
             else

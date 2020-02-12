@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Tecktal
 {
-
+    [RequireComponent(typeof(TecktalSkillsAPI))]
     public class QuizManager : MonoBehaviour
     {
         [SerializeField]
@@ -16,11 +16,24 @@ namespace Tecktal
         int index;
         [SerializeField]
         Inquiry q;
+        [SerializeField]
+        Module module;
+        [SerializeField]
+        bool loadingQuiz = false;
+        TecktalSkillsAPI skillAPI;
+        [SerializeField]
+        bool isLoadingNextQuestion = false;
 
-        public void Set(Quiz quiz)
+        public void Set(Module module)
         {
-            this.quiz = quiz;
+            index = 0;
+            this.quiz = module.quiz;
+            this.module = module;
             gameObject.SetActive(false);
+            if(quiz == null || quiz.quizzes == null)
+            {
+                skillAPI = GetComponent<TecktalSkillsAPI>();
+            }
         }
 
         private void Start()
@@ -32,7 +45,7 @@ namespace Tecktal
         public void ShowQuestion()
         {
             labels = GetComponentsInChildren<Text>();
-            if (index >= labels.Length || quiz == null || quiz.quizzes == null)
+            if (quiz == null || quiz.quizzes == null || index >= quiz.quizzes.Length)
             {
                 Exit();
                 return;
@@ -44,26 +57,65 @@ namespace Tecktal
             for(int i = 0; i < 4; i++)
             {
                 labels[i + 1].text = options[i];
+                SetColor(i + 1, Color.white);
             }
         }
 
         void Exit()
         {
-            gameObject.SetActive(true);
+            index = 0;
+            gameObject.SetActive(false);
         }
 
         public void Anwser(string option)
         {
+            if (isLoadingNextQuestion)
+                return;
             if(option == q.Answer)
             {
                 Debug.Log("Correct!");
-                index++;
-                ShowQuestion();
+                SetColor(option, Color.green);
             }
             else
             {
                 Debug.Log("Wrong!");
+                SetColor(option, Color.red);
             }
+            StartCoroutine(INextQuestion());
+        }
+
+        void SetColor(string option, Color color)
+        {
+            if(option == "A")
+            {
+                SetColor(1, color);
+            }else if(option == "B")
+            {
+                SetColor(2, color);
+            }
+            else if (option == "C")
+            {
+                SetColor(3, color);
+            }
+            else if (option == "D")
+            {
+                SetColor(4, color);
+            }
+        }
+
+        void SetColor(int n, Color color)
+        {
+            Debug.Log("Set Color " + color);
+            labels[n].GetComponentInParent<Image>().color = color;
+        }
+
+        IEnumerator INextQuestion()
+        {
+            isLoadingNextQuestion = true;
+            yield return new WaitForSeconds(0.5f);
+            index++;
+            ShowQuestion();
+            isLoadingNextQuestion = false;
         }
     }
 }
