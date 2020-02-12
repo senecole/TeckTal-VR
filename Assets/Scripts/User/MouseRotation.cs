@@ -14,6 +14,7 @@ namespace Tecktal
         public string axis;
         public float speed = 300;
         float angle;
+        //public FixedJoystick joy;
 
         private void Update()
         {
@@ -29,17 +30,29 @@ namespace Tecktal
         void Rotate()
         {
             float delta = Input.GetAxis(axis) * speed * Time.deltaTime;
-            if (useTouchSpeed)
+           /* if(joy != null)
+            {
+                delta = 0;
+                if (direction.y != 0)
+                {
+                    delta += joy.Horizontal*speed*Time.deltaTime;
+                }
+                if (direction.x != 0)
+                {
+                    delta += joy.Vertical * speed * Time.deltaTime;
+                }
+            }
+            else*/ if (useTouchSpeed)
             {
                 foreach (Touch t in Input.touches)
                 {
                     if (direction.y != 0)
                     {
-                        delta +=  t.deltaPosition.x / t.deltaTime;
+                        delta +=  1000*t.deltaPosition.x / t.deltaTime;
                     }
                     if (direction.x != 0)
                     {
-                        delta +=  t.deltaPosition.y / t.deltaTime;
+                        delta +=  1000*t.deltaPosition.y / t.deltaTime;
                     }
                 }
             }

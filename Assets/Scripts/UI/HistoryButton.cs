@@ -25,7 +25,7 @@ namespace Tecktal
             if (vp != null)
             {
                 Debug.Log("Found Video Player 360");
-                vp.Play(module.video, module);
+                vp.Play(module.URL_Video, module);
             }
         }
     }

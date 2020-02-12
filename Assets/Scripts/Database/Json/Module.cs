@@ -23,6 +23,7 @@ namespace Tecktal
         public string quizzes;
         public string Added_Time;
         public string skillmodule;
+        public string URL_Video;
         [SerializeField]
         Quiz _quiz;
         public Quiz quiz

@@ -17,6 +17,7 @@ namespace Tecktal
         [SerializeField]
         User user;
         static LearningHistory instance;
+        public bool autoPlayFirstVideo = false;
 
         public static LearningHistory GetInstance()
         {
@@ -68,6 +69,8 @@ namespace Tecktal
             Debug.Log("> On success history menu: " + text);
             moduleList = JsonUtility.FromJson<ModuleList>(text);
             UpdateList();
+            if(autoPlayFirstVideo)
+                buttons[0].onClick.Invoke();
         }
 
         string FixJson(string json)

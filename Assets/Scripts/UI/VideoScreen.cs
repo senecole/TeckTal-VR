@@ -19,6 +19,7 @@ namespace Tecktal
         [SerializeField]
         ModuleList moduleList;
         public ProceedPopup proceedPopup;
+        public bool autoPlayFirstVideo = false;
 
         public static VideoScreen GetInstance()
         {
@@ -71,6 +72,26 @@ namespace Tecktal
                 {
                     popular.Add(m);
                 }
+            }
+            if (autoPlayFirstVideo)
+            {
+                StartCoroutine(IPlayFirstVideo());
+            }
+        }
+
+        IEnumerator IPlayFirstVideo()
+        {
+            yield return new WaitForSeconds(5);
+            Debug.Log("Play first");
+            featured.buttons[0].onClick.Invoke();
+        }
+
+        private void Update()
+        {
+            if (autoPlayFirstVideo && Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("CLICK");
+                featured.buttons[0].onClick.Invoke();
             }
         }
 

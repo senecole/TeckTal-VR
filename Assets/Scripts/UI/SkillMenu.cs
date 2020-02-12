@@ -15,7 +15,7 @@ namespace Tecktal
         SkillList skillList;
         [SerializeField]
         Button[] buttons;
-
+        public bool autoShowFirstSkill = false;
 
         private void Start()
         {
@@ -24,7 +24,8 @@ namespace Tecktal
             buttons = GetComponentsInChildren<Button>();
             UpdateList();
             Debug.Log("Start coroutine");
-           // StartCoroutine(ShowVideos());
+            if(autoShowFirstSkill)
+                StartCoroutine(ShowVideos());
         }
 
         IEnumerator ShowVideos()

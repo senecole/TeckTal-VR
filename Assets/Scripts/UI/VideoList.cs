@@ -58,7 +58,7 @@ namespace Tecktal
             v.title = m.name;
             v.imgURL = m.url_thumbnail;
             v.isActive = true;
-            v.videoURL = m.video;
+            v.videoURL = m.URL_Video;
             v.ID = m.ID;
             v.cost = m.Cost;
             v.module = m;
