@@ -12,6 +12,9 @@ namespace Tecktal
         GameObject currentSphere;
         static VideoPlayer360 instance;
         VideoPlayer vp;
+        public bool exitOnError = true;
+        [SerializeField]
+        Quiz quiz;
 
         public static VideoPlayer360 GetInstance()
         {
@@ -23,8 +26,9 @@ namespace Tecktal
             instance = this;
         }
 
-        public void Play(string url)
+        public void Play(string url, Quiz quiz = null)
         {
+            this.quiz = quiz;
             Debug.Log("Play Video 360 " + url);
             if(spherePrefab != null)
             {
@@ -39,6 +43,11 @@ namespace Tecktal
                 // vp.started += OnStart; 
                 vp.loopPointReached += OnEnd;
                 vp.errorReceived += OnError;
+                QuizManager qm = currentSphere.GetComponentInChildren<QuizManager>();
+                if(qm != null)
+                {
+                    qm.Set(quiz);
+                }
             }
         }
 
@@ -49,7 +58,7 @@ namespace Tecktal
 
         void OnError(VideoPlayer source, string msg)
         {
-            if (currentSphere != null)
+            if (exitOnError && currentSphere != null)
                 Destroy(currentSphere);
         }
 

@@ -22,6 +22,7 @@ namespace Tecktal
         public string ID;
         public string quizzes;
         public string Added_Time;
+        public string skillmodule;
         [SerializeField]
         Quiz _quiz;
         public Quiz quiz

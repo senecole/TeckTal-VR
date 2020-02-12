@@ -21,6 +21,11 @@ namespace Tecktal
             Destroy(gameObject);
         }
 
+        public void Pause()
+        {
+            videoPlayer.Pause();
+        }
+
         public void Reload()
         {
             videoPlayer.Stop();
