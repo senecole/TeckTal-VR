@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 namespace Tecktal
 {
-    [RequireComponent(typeof(TecktalSkillsAPI))]
     public class QuizManager : MonoBehaviour
     {
         [SerializeField]
@@ -20,7 +19,6 @@ namespace Tecktal
         Module module;
         [SerializeField]
         bool loadingQuiz = false;
-        TecktalSkillsAPI skillAPI;
         [SerializeField]
         bool isLoadingNextQuestion = false;
 
@@ -30,10 +28,7 @@ namespace Tecktal
             this.quiz = module.quiz;
             this.module = module;
             gameObject.SetActive(false);
-            if(quiz == null || quiz.quizzes == null)
-            {
-                skillAPI = GetComponent<TecktalSkillsAPI>();
-            }
+            Debug.Log(">> Set Module");
         }
 
         private void Start()

@@ -93,6 +93,7 @@ namespace Tecktal
             {
                 for (int i = 0; i < moduleList.skillmodule.Length; i++)
                 {
+                    moduleList.skillmodule[i].LoadQuiz();
                     if (btn >= buttons.Length)
                         break;
                     SetButton(buttons[btn], moduleList.skillmodule[i]);
