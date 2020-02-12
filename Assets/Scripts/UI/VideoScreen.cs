@@ -35,6 +35,11 @@ namespace Tecktal
             //gameObject.SetActive(false);
         }
 
+        private void Start()
+        {
+            skillAPI.GetAllSkillModule("", OnSuccess, OnError);
+        }
+
         public void Set(Skill skill)
         {
            // gameObject.SetActive(true);

@@ -64,17 +64,18 @@ namespace Tecktal
             }
         }
 
-        public void GetAllSkillModule(string skillPathID, Action<string> onSuccess = null, Action<string> onError = null)
+        public void GetAllSkillModule(string skillPathID = "", Action<string> onSuccess = null, Action<string> onError = null)
         {
             StartCoroutine(IGetAllSkillModule(skillPathID, onSuccess, onError));
         }
 
-        IEnumerator IGetAllSkillModule(string skillPathID, Action<string> onSuccess = null, Action<string> onError = null)
+        IEnumerator IGetAllSkillModule(string skillPathID = "", Action<string> onSuccess = null, Action<string> onError = null)
         {
             WWWForm form = new WWWForm();
             form.AddField("authtoken", authtoken);
             form.AddField("scope", "creatorapi");
-            form.AddField("criteria", "(skillpath_id == "+skillPathID+")");
+            if(skillPathID != "")
+               form.AddField("criteria", "(skillpath_id == "+skillPathID+")");
             form.AddField("zc_ownername", owner);
             form.AddField("raw", "true");
 
