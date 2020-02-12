@@ -10,10 +10,20 @@ namespace Tecktal
     {
 
         VideoPlayer videoPlayer;
+        public GameObject play;
+        public GameObject pause;
 
         private void Start()
         {
             videoPlayer = GetComponent<VideoPlayer>();
+            videoPlayer.loopPointReached += OnEnd;
+        }
+
+        void OnEnd(VideoPlayer source)
+        {
+            Debug.Log("On End of The Video");
+            play.SetActive(true);
+            pause.SetActive(false);
         }
 
         public void Home()
@@ -24,6 +34,12 @@ namespace Tecktal
         public void Pause()
         {
             videoPlayer.Pause();
+        }
+
+        public void Play()
+        {
+            //videoPlayer.playbackSpeed = 1;
+            videoPlayer.Play();
         }
 
         public void Reload()
