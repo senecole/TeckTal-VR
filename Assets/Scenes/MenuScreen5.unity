@@ -33941,7 +33941,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0, y: 0.7402344}
   savedFill: 0
 --- !u!114 &2131234322
 MonoBehaviour:
@@ -33963,10 +33963,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
