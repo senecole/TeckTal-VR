@@ -5215,7 +5215,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 591, y: 100}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.18359375, y: 0}
+  savedTextUV0: {x: 0.21484375, y: 0.26757812}
   savedFill: 0
 --- !u!114 &309168230
 MonoBehaviour:
@@ -7032,7 +7032,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 591.41, y: 100}
   savedColor: {r: 0.909804, g: 0.61960787, b: 0, a: 1}
-  savedTextUV0: {x: 0, y: 0.41796875}
+  savedTextUV0: {x: 0, y: 0.23046875}
   savedFill: 0
 --- !u!114 &456636938
 MonoBehaviour:
@@ -7279,7 +7279,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &470304353
 MonoBehaviour:
@@ -7301,10 +7301,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -7602,7 +7602,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 160, y: 30}
   savedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
-  savedTextUV0: {x: 0.59375, y: 0}
+  savedTextUV0: {x: 0.23828125, y: 0.037109375}
   savedFill: 0
 --- !u!114 &544873017
 MonoBehaviour:
@@ -9328,7 +9328,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &638554751
 MonoBehaviour:
@@ -9790,7 +9790,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 591.41, y: 100}
   savedColor: {r: 0.03137255, g: 0.29803923, b: 0.5568628, a: 1}
-  savedTextUV0: {x: 0.5546875, y: 0.095703125}
+  savedTextUV0: {x: 0.71484375, y: 0.103515625}
   savedFill: 0
 --- !u!114 &690691198
 MonoBehaviour:
@@ -10541,7 +10541,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &737020504
 MonoBehaviour:
@@ -11607,7 +11607,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &776394037
 MonoBehaviour:
@@ -13250,7 +13250,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &888653903
 MonoBehaviour:
@@ -13272,10 +13272,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -13347,7 +13347,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &892014615
 MonoBehaviour:
@@ -15365,6 +15365,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977376814}
   m_CullTransparentMesh: 0
+--- !u!1 &981000788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981000790}
+  - component: {fileID: 981000789}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &981000789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981000788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da16a5b74f4c5994a92e5da03662c354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &981000790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981000788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1964714, y: -1.8870008, z: 5.3827047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &982187101
 GameObject:
   m_ObjectHideFlags: 0
@@ -15924,7 +15967,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 591, y: 100}
   savedColor: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.22851562}
+  savedTextUV0: {x: 0.3359375, y: 0.029296875}
   savedFill: 0
 --- !u!114 &996112204
 MonoBehaviour:
@@ -17532,7 +17575,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &1116451655
 MonoBehaviour:
@@ -20546,7 +20589,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &1291384824
 MonoBehaviour:
@@ -23486,7 +23529,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1464445560
 MonoBehaviour:
@@ -23508,10 +23551,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -23885,7 +23928,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1469115124
 MonoBehaviour:
@@ -23907,10 +23950,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -24168,7 +24211,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 350, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1482128787
 MonoBehaviour:
@@ -24190,10 +24233,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -24265,7 +24308,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &1490214124
 MonoBehaviour:
@@ -24362,7 +24405,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &1497800694
 MonoBehaviour:
@@ -24552,7 +24595,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1506992314
 MonoBehaviour:
@@ -24574,10 +24617,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -26657,7 +26700,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1640210472
 MonoBehaviour:
@@ -26679,10 +26722,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -27592,7 +27635,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1719319489
 MonoBehaviour:
@@ -27614,10 +27657,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -27689,7 +27732,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &1719396049
 MonoBehaviour:
@@ -27786,7 +27829,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1723202930
 MonoBehaviour:
@@ -27808,10 +27851,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -29720,7 +29763,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &1837177266
 MonoBehaviour:
@@ -29817,7 +29860,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &1845766208
 MonoBehaviour:
@@ -29839,10 +29882,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -30505,7 +30548,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 591.41, y: 100}
   savedColor: {r: 0.9294118, g: 0.32156864, b: 0, a: 1}
-  savedTextUV0: {x: 0.56640625, y: 0.33007812}
+  savedTextUV0: {x: 0.33984375, y: 0.234375}
   savedFill: 0
 --- !u!114 &1882379245
 MonoBehaviour:
@@ -31394,7 +31437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 183544, guid: 6d0acc00cc82d436b9d11446d2ddfef6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 406632, guid: 6d0acc00cc82d436b9d11446d2ddfef6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32206,7 +32249,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &2006503730
 MonoBehaviour:
@@ -32228,10 +32271,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -32677,7 +32720,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &2030799085
 MonoBehaviour:
@@ -32699,10 +32742,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -33324,7 +33367,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 118.33998, y: 32.3}
   savedColor: {r: 1, g: 1, b: 1, a: 1}
-  savedTextUV0: {x: 0.6328125, y: 0.033203125}
+  savedTextUV0: {x: 0.23828125, y: 0.00390625}
   savedFill: 0
 --- !u!114 &2104072452
 MonoBehaviour:
@@ -33561,7 +33604,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &2108765847
 MonoBehaviour:
@@ -33583,10 +33626,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -33844,7 +33887,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0.51953125, y: 0.16601562}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &2127964812
 MonoBehaviour:
@@ -33866,10 +33909,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2586f92b33c98f045832edc878f2c2b6, type: 3}
-    m_FontSize: 44
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 3
     m_MaxSize: 119
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -33941,7 +33984,7 @@ MonoBehaviour:
   savedUp: {x: 0, y: 1, z: 0}
   savedRectSize: {x: 319.1, y: 250}
   savedColor: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
-  savedTextUV0: {x: 0, y: 0.7402344}
+  savedTextUV0: {x: 0.0234375, y: 0.056640625}
   savedFill: 0
 --- !u!114 &2131234322
 MonoBehaviour:
