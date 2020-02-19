@@ -33,11 +33,13 @@ namespace Tecktal
 
         public void Pause()
         {
+            Debug.Log("Pause");
             videoPlayer.Pause();
         }
 
         public void Play()
         {
+            Debug.Log("Play");
             //videoPlayer.playbackSpeed = 1;
             videoPlayer.Play();
         }
