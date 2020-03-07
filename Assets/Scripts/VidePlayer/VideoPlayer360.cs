@@ -66,8 +66,8 @@ namespace Tecktal
         void OnEnd(VideoPlayer source)
         {
             Debug.Log("On End of The Video");
-            if(currentSphere != null)
-                Destroy (currentSphere);
+            //if(currentSphere != null)
+              //  Destroy (currentSphere);
         }
 
         private void Update()

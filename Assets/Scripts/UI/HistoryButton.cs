@@ -10,6 +10,8 @@ namespace Tecktal
     {
         [SerializeField]
         Module module;
+        public int index;
+        public static int currentIndex;
 
         public void Add(Module module)
         {
@@ -26,6 +28,7 @@ namespace Tecktal
             {
                 Debug.Log("Found Video Player 360");
                 vp.Play(module.URL_Video, module);
+                currentIndex = index;
             }
         }
     }

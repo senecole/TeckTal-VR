@@ -28,10 +28,10 @@ namespace Tecktal
         private void Start()
         {
             userAPI = GetComponent<TecktalUsersAPI>();
-            if (loginTest /*&& Application.isEditor*/)
+            if (loginTest && Application.isEditor)
             {
-                userEmail = "renanclaudino@gmail.com";
-                pass = "12345";
+                userEmail = "sidyndao@gmail.com";
+                pass = "23456";
                 userAPI.GetUser(userEmail, OnSuccess, OnError);
                 enabled = false;
             }

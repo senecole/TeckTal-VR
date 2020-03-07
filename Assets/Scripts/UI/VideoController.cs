@@ -25,7 +25,7 @@ namespace Tecktal
             play.SetActive(true);
             pause.SetActive(false);
         }
-
+        
         public void Home()
         {
             Destroy(gameObject);

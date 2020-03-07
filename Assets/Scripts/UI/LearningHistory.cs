@@ -18,6 +18,7 @@ namespace Tecktal
         User user;
         static LearningHistory instance;
         public bool autoPlayFirstVideo = false;
+        List<HistoryButton> historyButtons = new List<HistoryButton>();
 
         public static LearningHistory GetInstance()
         {
@@ -44,6 +45,7 @@ namespace Tecktal
             instance = this;
             buttons = GetComponentsInChildren<Button>();
             skillAPI = GetComponent<TecktalSkillsAPI>();
+            historyButtons = new List<HistoryButton>();
         }
 
         private void Start()
@@ -114,6 +116,26 @@ namespace Tecktal
             btn.gameObject.SetActive(true);
             HistoryButton hb = btn.gameObject.AddComponent<HistoryButton>();
             hb.Add(module);
+            hb.index = historyButtons.Count;
+            historyButtons.Add(hb);
+        }
+
+        public void Forward()
+        {
+            if(HistoryButton.currentIndex < historyButtons.Count - 1)
+            {
+                HistoryButton.currentIndex++;
+                historyButtons[HistoryButton.currentIndex].OnClick();
+            }
+        }
+
+        public void Backward()
+        {
+            if (HistoryButton.currentIndex > 0)
+            {
+                HistoryButton.currentIndex--;
+                historyButtons[HistoryButton.currentIndex].OnClick();
+            }
         }
     }
 }
