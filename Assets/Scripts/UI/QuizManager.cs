@@ -21,6 +21,10 @@ namespace Tecktal
         bool loadingQuiz = false;
         [SerializeField]
         bool isLoadingNextQuestion = false;
+        public GameObject right;
+        public GameObject wrong;
+        public Text scoreLabel;
+        int score;
 
         public void Set(Module module)
         {
@@ -39,6 +43,7 @@ namespace Tecktal
 
         public void ShowQuestion()
         {
+            HideFeedback();
             labels = GetComponentsInChildren<Text>();
             if (quiz == null || quiz.quizzes == null || index >= quiz.quizzes.Length)
             {
@@ -58,8 +63,26 @@ namespace Tecktal
 
         void Exit()
         {
+            ShowScore();
             index = 0;
+            score = 0;
             gameObject.SetActive(false);
+        }
+
+        void ShowScore()
+        {
+            if (scoreLabel != null)
+            {
+                scoreLabel.gameObject.SetActive(true);
+                scoreLabel.text = "Score: " + score + "/" + index;
+                scoreLabel.StartCoroutine(HideScore());
+            }
+        }
+
+        IEnumerator HideScore()
+        {
+            yield return new WaitForSeconds(2);
+            scoreLabel.gameObject.SetActive(false);
         }
 
         public void Anwser(string option)
@@ -69,14 +92,41 @@ namespace Tecktal
             if(option == q.Answer)
             {
                 Debug.Log("Correct!");
+                score++;
                 SetColor(option, Color.green);
+                ShowFeedback(right);
             }
             else
             {
                 Debug.Log("Wrong!");
                 SetColor(option, Color.red);
+                ShowFeedback(wrong);
             }
             StartCoroutine(INextQuestion());
+        }
+
+        void HideFeedback()
+        {
+            if (right != null)
+            {
+                right.SetActive(false);
+            }
+            if (wrong != null)
+            {
+                wrong.SetActive(false);
+            }
+        }
+
+        void ShowFeedback(GameObject obj)
+        {
+            if (obj == null)
+                return;
+            obj.SetActive(true);
+            AudioSource audio = obj.GetComponent<AudioSource>();
+            if(audio != null)
+            {
+                audio.Play();
+            }
         }
 
         void SetColor(string option, Color color)

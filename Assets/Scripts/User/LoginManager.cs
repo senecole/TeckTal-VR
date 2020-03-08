@@ -28,7 +28,7 @@ namespace Tecktal
         private void Start()
         {
             userAPI = GetComponent<TecktalUsersAPI>();
-            if (loginTest && Application.isEditor)
+            if (loginTest )
             {
                 userEmail = "sidyndao@gmail.com";
                 pass = "23456";
