@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using Evereal.YoutubeDLPlayer;
 
 namespace Tecktal
 {
@@ -16,6 +17,9 @@ namespace Tecktal
         [SerializeField]
         Module module;
         public GameObject[] screens;
+        YTDLCore ytdlCore;
+        [SerializeField]
+        bool youtubeTest = false;
 
         public static VideoPlayer360 GetInstance()
         {
@@ -24,12 +28,15 @@ namespace Tecktal
 
         private void Awake()
         {
+            ytdlCore = GetComponent <YTDLCore>();
             instance = this;
         }
 
         public void Play(string url, Module module = null)
         {
             this.module = module;
+            if(youtubeTest && Application.isEditor)
+               url = "https://www.youtube.com/watch?v=cXbtWX26VDw";
             Debug.Log("Play Video 360 " + url);
             if(spherePrefab != null)
             {
@@ -38,18 +45,51 @@ namespace Tecktal
                     Destroy(currentSphere);
                 currentSphere = Instantiate(spherePrefab, spherePrefab.transform.position, spherePrefab.transform.rotation);
                 currentSphere.SetActive(true);
-                vp = currentSphere.GetComponent<VideoPlayer>();
-                vp.url = url;
-                vp.Play();
-                // vp.started += OnStart; 
-                vp.loopPointReached += OnEnd;
-                vp.errorReceived += OnError;
+                if (IsYoutube(url))
+                {
+                    YoutubePlay(url);
+                }
+                else
+                {
+                    SetVideo(url);
+                }
                 QuizManager qm = currentSphere.GetComponentInChildren<QuizManager>();
                 if(qm != null)
                 {
                     qm.Set(module);
                 }
             }
+        }
+
+        bool IsYoutube(string url)
+        {
+            if (ytdlCore == null)
+                return false;
+            return url.Contains("youtube.com") || url.Contains("youtu.be");
+        }
+
+        void SetVideo(string url)
+        {
+            vp = currentSphere.GetComponent<VideoPlayer>();
+            vp.url = url;
+            vp.Play();
+            // vp.started += OnStart; 
+            vp.loopPointReached += OnEnd;
+            vp.errorReceived += OnError;
+        }
+
+        void YoutubePlay(string url)
+        {
+            ytdlCore.parseCompleted += ParseCompleted;
+            ytdlCore.SetOptions("--format best[protocol=https]");
+            StartCoroutine(ytdlCore.PrepareAndParse(url));
+        }
+
+        private void ParseCompleted(Evereal.YoutubeDLPlayer.VideoInfo video)
+        {
+            Debug.Log("youtune title: " + video.title);
+            Debug.Log("youtube url: " + video.url);
+            SetVideo(video.url);
         }
 
         void OnStart(VideoPlayer source)
